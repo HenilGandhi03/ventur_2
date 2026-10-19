@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ventur_2/repositories/quiz_repository.dart';
+import 'package:ventur_2/screens/quiz_screen.dart';
 import 'package:ventur_2/widgets/category_card.dart';
 
 class ModeSelectScreen extends StatelessWidget {
@@ -18,7 +20,13 @@ class ModeSelectScreen extends StatelessWidget {
             description: 'Guess the country from a single image.',
             imagePath: 'assets/images/home_background.jpeg',
             onTap: () {
-              // Handle button press
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) =>
+                      QuizScreen(repository: QuizRepository()),
+                ),
+              );
             },
           ),
           CategoryCard(
