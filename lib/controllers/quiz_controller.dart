@@ -1,5 +1,9 @@
+import 'dart:async';
+
 import 'package:ventur_2/models/quiz_question.dart';
 import 'package:ventur_2/models/quiz_state.dart';
+import 'package:ventur_2/models/user_progress.dart';
+import 'package:ventur_2/repositories/progress_storage.dart';
 import 'package:ventur_2/repositories/quiz_repository.dart';
 
 class QuizController {
@@ -9,28 +13,44 @@ class QuizController {
 
   List<QuizQuestion> _questions = [];
 
-  QuizController(this.repository);
+  final ProgressStorage storage;
+
+  QuizController(this.repository, {ProgressStorage? storage})
+    : storage = storage ?? SharedPrefsProgressStorage();
+
+  // --------------------------------------------------
+  // PERSISTENCE
+  // --------------------------------------------------
 
   Future<void> startQuiz() async {
     _questions = await repository.getQuestions();
 
     if (_questions.isEmpty) return;
 
+    final saved = await storage.load();
+
+    // Defaults for a brand new player.
+    final level = (saved?.currentLevel ?? 1).clamp(1, _questions.length);
+    final question = _questions[level - 1];
+    final lastImage = question.imageUrls.length - 1;
+
     state = QuizState(
-      currentRound: 1,
+      currentRound: level,
       totalRounds: _questions.length,
-      currentLevel: 1,
-      coins: 120,
-      hints: 3,
-      question: _questions.first,
+      currentLevel: level,
+      coins: saved?.coins ?? 120,
+      hints: saved?.hints ?? 3,
+      question: question,
 
-      // Always start from image 1.
-      currentImageIndex: 0,
-      maxUnlockedImageIndex: 0,
-      wrongAttempts: 0,
+      currentImageIndex: (saved?.currentImageIndex ?? 0).clamp(0, lastImage),
+      maxUnlockedImageIndex: (saved?.maxUnlockedImageIndex ?? 0).clamp(
+        0,
+        lastImage,
+      ),
+      wrongAttempts: (saved?.wrongAttempts ?? 0).clamp(0, 2),
 
-      showOptions: false,
-      showContinent: false,
+      showOptions: saved?.showOptions ?? false,
+      showContinent: saved?.showContinent ?? false,
       showAnswer: false,
 
       selectedAnswer: null,
@@ -40,7 +60,47 @@ class QuizController {
     );
   }
 
+  /// Wipes saved progress and restarts from level 1.
+  Future<void> resetProgress() async {
+    await storage.clear();
+    await startQuiz();
+  }
+
+  // Saves what a restart should resume from. An answered/skipped level is
+  // saved as the *next* level (the player has already earned it), and a lost
+  // level is saved as a fresh retry of the same level.
+  void _save() {
+    final s = state;
+    if (s == null) return;
+
+    final cleared = s.answered && !s.gameOver;
+    final level = cleared
+        ? (s.currentLevel + 1).clamp(1, _questions.length)
+        : s.currentLevel;
+    final midLevel = !s.answered && !s.gameOver;
+
+    unawaited(
+      storage.save(
+        UserProgress(
+          currentLevel: level,
+          coins: s.coins,
+          hints: s.hints,
+          wrongAttempts: midLevel ? s.wrongAttempts : 0,
+          currentImageIndex: midLevel ? s.currentImageIndex : 0,
+          maxUnlockedImageIndex: midLevel ? s.maxUnlockedImageIndex : 0,
+          showOptions: midLevel && s.showOptions,
+          showContinent: midLevel && s.showContinent,
+        ),
+      ),
+    );
+  }
+
   void submitAnswer(String answer) {
+    _submitAnswer(answer);
+    _save();
+  }
+
+  void _submitAnswer(String answer) {
     final currentState = state;
 
     if (currentState == null || currentState.answered) {
@@ -163,6 +223,7 @@ class QuizController {
       hints: currentState.hints - 1,
       showOptions: true,
     );
+    _save();
   }
 
   // --------------------------------------------------
@@ -184,6 +245,7 @@ class QuizController {
       hints: currentState.hints - 1,
       showContinent: true,
     );
+    _save();
   }
 
   // --------------------------------------------------
@@ -200,43 +262,16 @@ class QuizController {
     // Need 2 hints to skip.
     if (currentState.hints < 2) return false;
 
-    final nextQuestionIndex = currentState.currentLevel;
-
-    // No more questions.
-    if (nextQuestionIndex >= _questions.length) {
-      return false;
-    }
-
-    final nextQuestion = _questions[nextQuestionIndex];
-
-    state = QuizState(
-      currentRound: currentState.currentRound + 1,
-      totalRounds: _questions.length,
-      currentLevel: currentState.currentLevel + 1,
-
-      coins: currentState.coins,
-
-      // Remove 2 hints.
+    // Mark as answered (not correct, not game over) so the result screen
+    // reveals the answer; its "Next Question" button advances the level.
+    state = currentState.copyWith(
       hints: currentState.hints - 2,
-
-      question: nextQuestion,
-
-      // New level starts from image 1.
-      currentImageIndex: 0,
-      maxUnlockedImageIndex: 0,
-
-      // Reset lives/attempts for new question.
-      wrongAttempts: 0,
-
-      showOptions: false,
-      showContinent: false,
-      showAnswer: false,
-
       selectedAnswer: null,
-      answered: false,
+      answered: true,
       isCorrect: false,
       gameOver: false,
     );
+    _save();
 
     return true;
   }
@@ -292,6 +327,7 @@ class QuizController {
       isCorrect: false,
       gameOver: false,
     );
+    _save();
 
     return true;
   }
@@ -324,5 +360,6 @@ class QuizController {
       isCorrect: false,
       gameOver: false,
     );
+    _save();
   }
 }

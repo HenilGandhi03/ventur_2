@@ -2,6 +2,7 @@ import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:ventur_2/controllers/quiz_controller.dart';
 import 'package:ventur_2/models/quiz_state.dart';
+import 'package:ventur_2/widgets/zoomable_image.dart';
 
 class QuizResultScreen extends StatefulWidget {
   final QuizState quizState;
@@ -42,6 +43,9 @@ class _QuizResultScreenState extends State<QuizResultScreen> {
     super.dispose();
   }
 
+  // Answered without being correct and without losing = skipped via hint.
+  bool get _skipped => !widget.quizState.isCorrect && !widget.quizState.gameOver;
+
   void _nextQuestion() {
     final currentLevel = widget.quizState.currentLevel;
     final totalRounds = widget.quizState.totalRounds;
@@ -63,6 +67,171 @@ class _QuizResultScreenState extends State<QuizResultScreen> {
     Navigator.pop(context);
   }
 
+  Widget _buildStaticConfetti() {
+    return IgnorePointer(
+      child: Stack(
+        children: [
+          // Top left
+          Positioned(
+            top: 45,
+            left: 18,
+            child: _confettiPiece(
+              color: const Color(0xFF18A957),
+              width: 9,
+              height: 20,
+              rotation: -0.5,
+            ),
+          ),
+
+          Positioned(
+            top: 105,
+            left: 38,
+            child: _confettiPiece(
+              color: const Color(0xFFFFB800),
+              width: 10,
+              height: 17,
+              rotation: 0.4,
+            ),
+          ),
+
+          // Top right
+          Positioned(
+            top: 65,
+            right: 25,
+            child: _confettiPiece(
+              color: const Color(0xFF2196F3),
+              width: 9,
+              height: 20,
+              rotation: 0.5,
+            ),
+          ),
+
+          Positioned(
+            top: 145,
+            right: 18,
+            child: _confettiPiece(
+              color: const Color(0xFFFF3D71),
+              width: 9,
+              height: 18,
+              rotation: -0.4,
+            ),
+          ),
+
+          // Middle left
+          Positioned(
+            top: 260,
+            left: 8,
+            child: _confettiPiece(
+              color: const Color(0xFFFFB800),
+              width: 10,
+              height: 18,
+              rotation: -0.6,
+            ),
+          ),
+
+          Positioned(
+            top: 390,
+            left: 24,
+            child: _confettiPiece(
+              color: const Color(0xFF18A957),
+              width: 9,
+              height: 17,
+              rotation: 0.5,
+            ),
+          ),
+
+          // Middle right
+          Positioned(
+            top: 310,
+            right: 10,
+            child: _confettiPiece(
+              color: const Color(0xFF2196F3),
+              width: 9,
+              height: 19,
+              rotation: -0.5,
+            ),
+          ),
+
+          Positioned(
+            top: 460,
+            right: 28,
+            child: _confettiPiece(
+              color: const Color(0xFFFFB800),
+              width: 10,
+              height: 17,
+              rotation: 0.6,
+            ),
+          ),
+
+          // Bottom left
+          Positioned(
+            bottom: 90,
+            left: 18,
+            child: _confettiPiece(
+              color: const Color(0xFFFF3D71),
+              width: 9,
+              height: 18,
+              rotation: 0.5,
+            ),
+          ),
+
+          Positioned(
+            bottom: 170,
+            left: 8,
+            child: _confettiPiece(
+              color: const Color(0xFF2196F3),
+              width: 9,
+              height: 18,
+              rotation: -0.5,
+            ),
+          ),
+
+          // Bottom right
+          Positioned(
+            bottom: 110,
+            right: 16,
+            child: _confettiPiece(
+              color: const Color(0xFF18A957),
+              width: 9,
+              height: 19,
+              rotation: -0.4,
+            ),
+          ),
+
+          Positioned(
+            bottom: 210,
+            right: 8,
+            child: _confettiPiece(
+              color: const Color(0xFFFFB800),
+              width: 10,
+              height: 18,
+              rotation: 0.5,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _confettiPiece({
+    required Color color,
+    required double width,
+    required double height,
+    required double rotation,
+  }) {
+    return Transform.rotate(
+      angle: rotation,
+      child: Container(
+        width: width,
+        height: height,
+        decoration: BoxDecoration(
+          color: color,
+          borderRadius: BorderRadius.circular(5),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final quizState = widget.quizState;
@@ -75,6 +244,8 @@ class _QuizResultScreenState extends State<QuizResultScreen> {
       body: SafeArea(
         child: Stack(
           children: [
+            if (isCorrect) _buildStaticConfetti(),
+
             SingleChildScrollView(
               padding: const EdgeInsets.fromLTRB(24, 20, 24, 24),
               child: Column(
@@ -83,7 +254,9 @@ class _QuizResultScreenState extends State<QuizResultScreen> {
 
                   // Result title
                   Text(
-                    isCorrect ? 'Correct!' : 'Not quite!',
+                    isCorrect
+                        ? 'Correct!'
+                        : (_skipped ? 'Skipped' : 'Not quite!'),
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 36,
@@ -110,14 +283,10 @@ class _QuizResultScreenState extends State<QuizResultScreen> {
                   const SizedBox(height: 24),
 
                   // Image
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(18),
-                    child: Image.asset(
-                      quizState.question.imageUrls.last,
-                      width: double.infinity,
-                      height: 260,
-                      fit: BoxFit.cover,
-                    ),
+                  ZoomableImage(
+                    imagePath: quizState.question.imageUrls.last,
+                    height: 260,
+                    borderRadius: 18,
                   ),
 
                   const SizedBox(height: 18),
@@ -228,7 +397,9 @@ class _QuizResultScreenState extends State<QuizResultScreen> {
                     width: double.infinity,
                     height: 62,
                     child: ElevatedButton(
-                      onPressed: isCorrect ? _nextQuestion : _playAgain,
+                      onPressed: (isCorrect || _skipped)
+                          ? _nextQuestion
+                          : _playAgain,
                       style: ElevatedButton.styleFrom(
                         backgroundColor: isCorrect
                             ? const Color(0xFF12A957)
@@ -243,7 +414,9 @@ class _QuizResultScreenState extends State<QuizResultScreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            isCorrect ? 'Next Question' : 'Play Again',
+                            (isCorrect || _skipped)
+                                ? 'Next Question'
+                                : 'Play Again',
                             style: const TextStyle(
                               fontSize: 19,
                               fontWeight: FontWeight.w800,

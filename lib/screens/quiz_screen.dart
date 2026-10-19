@@ -6,6 +6,7 @@ import 'package:ventur_2/widgets/hint_card.dart';
 import 'package:ventur_2/widgets/options_card.dart';
 import 'package:ventur_2/widgets/progress_bar.dart';
 import 'package:ventur_2/widgets/text_field.dart';
+import 'package:ventur_2/widgets/zoomable_image.dart';
 
 class QuizScreen extends StatefulWidget {
   final QuizRepository repository;
@@ -43,7 +44,7 @@ class _QuizScreenState extends State<QuizScreen> {
     }
   }
 
-  void _submitAnswer(String answer) {
+  Future<void> _submitAnswer(String answer) async {
     controller.submitAnswer(answer);
 
     final state = controller.state;
@@ -51,13 +52,20 @@ class _QuizScreenState extends State<QuizScreen> {
     if (state == null) return;
 
     if (state.answered) {
-      Navigator.push(
+      await Navigator.push(
         context,
         MaterialPageRoute(
           builder: (context) =>
               QuizResultScreen(quizState: state, controller: controller),
         ),
       );
+
+      // Result screen mutated the controller (next level / play again);
+      // rebuild so this screen shows the new state.
+      if (mounted) {
+        answerController.clear();
+        setState(() {});
+      }
 
       return;
     }
@@ -102,14 +110,11 @@ class _QuizScreenState extends State<QuizScreen> {
             //
             Stack(
               children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(16),
-                  child: Image.asset(
-                    quizState.question.imageUrls[quizState.currentImageIndex],
-                    width: double.infinity,
-                    height: 300,
-                    fit: BoxFit.cover,
-                  ),
+                ZoomableImage(
+                  imagePath:
+                      quizState.question.imageUrls[quizState.currentImageIndex],
+                  height: 300,
+                  borderRadius: 16,
                 ),
 
                 // ❤️ Lives + 💡 Hints overlay
@@ -280,24 +285,26 @@ class _QuizScreenState extends State<QuizScreen> {
                         title: 'Skip',
                         description: '(-2 hints)',
                         imagePath: 'assets/images/next.png',
-                        onTap: () {
-                          controller.skipQuestion();
+                        onTap: () async {
+                          if (!controller.skipQuestion()) return;
 
                           final state = controller.state;
+                          if (state == null) return;
 
-                          if (state != null && state.answered) {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => QuizResultScreen(
-                                  quizState: state,
-                                  controller: controller,
-                                ),
+                          await Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => QuizResultScreen(
+                                quizState: state,
+                                controller: controller,
                               ),
-                            );
-                          }
+                            ),
+                          );
 
-                          setState(() {});
+                          if (mounted) {
+                            answerController.clear();
+                            setState(() {});
+                          }
                         },
                       ),
                     ),
