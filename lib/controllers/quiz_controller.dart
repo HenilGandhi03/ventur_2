@@ -1,8 +1,11 @@
 import 'dart:async';
 
+import 'package:ventur_2/models/game_save.dart';
+import 'package:ventur_2/models/quiz_progress.dart';
 import 'package:ventur_2/models/quiz_question.dart';
 import 'package:ventur_2/models/quiz_state.dart';
-import 'package:ventur_2/models/user_progress.dart';
+import 'package:ventur_2/models/user.dart';
+import 'package:ventur_2/repositories/composite_progress_storage.dart';
 import 'package:ventur_2/repositories/progress_storage.dart';
 import 'package:ventur_2/repositories/quiz_repository.dart';
 
@@ -15,8 +18,15 @@ class QuizController {
 
   final ProgressStorage storage;
 
+  // Persisted player data. QuizState (below) is the per-screen view of it.
+  User _user = User.newPlayer();
+  List<QuizProgress> _progress = [];
+
+  User get user => _user;
+  List<QuizProgress> get progress => List.unmodifiable(_progress);
+
   QuizController(this.repository, {ProgressStorage? storage})
-    : storage = storage ?? SharedPrefsProgressStorage();
+    : storage = storage ?? CompositeProgressStorage();
 
   // --------------------------------------------------
   // PERSISTENCE
@@ -29,8 +39,12 @@ class QuizController {
 
     final saved = await storage.load();
 
-    // Defaults for a brand new player.
-    final level = (saved?.currentLevel ?? 1).clamp(1, _questions.length);
+    // No save (or unreadable one) = brand new player.
+    _user = saved?.user ?? User.newPlayer();
+    _progress = List.of(saved?.progress ?? const []);
+    final session = saved?.session ?? const LevelSession();
+
+    final level = _user.currentLevel.clamp(1, _questions.length);
     final question = _questions[level - 1];
     final lastImage = question.imageUrls.length - 1;
 
@@ -38,19 +52,16 @@ class QuizController {
       currentRound: level,
       totalRounds: _questions.length,
       currentLevel: level,
-      coins: saved?.coins ?? 120,
-      hints: saved?.hints ?? 3,
+      coins: _user.coins,
+      hints: _user.hints,
       question: question,
 
-      currentImageIndex: (saved?.currentImageIndex ?? 0).clamp(0, lastImage),
-      maxUnlockedImageIndex: (saved?.maxUnlockedImageIndex ?? 0).clamp(
-        0,
-        lastImage,
-      ),
-      wrongAttempts: (saved?.wrongAttempts ?? 0).clamp(0, 2),
+      currentImageIndex: session.currentImageIndex.clamp(0, lastImage),
+      maxUnlockedImageIndex: session.maxUnlockedImageIndex.clamp(0, lastImage),
+      wrongAttempts: (User.maxLives - _user.lives).clamp(0, User.maxLives - 1),
 
-      showOptions: saved?.showOptions ?? false,
-      showContinent: saved?.showContinent ?? false,
+      showOptions: session.showOptions,
+      showContinent: session.showContinent,
       showAnswer: false,
 
       selectedAnswer: null,
@@ -79,24 +90,79 @@ class QuizController {
         : s.currentLevel;
     final midLevel = !s.answered && !s.gameOver;
 
+    _user = _user.copyWith(
+      coins: s.coins,
+      hints: s.hints,
+      lives: midLevel ? User.maxLives - s.wrongAttempts : User.maxLives,
+      currentLevel: level,
+      highestLevel: level > _user.highestLevel ? level : _user.highestLevel,
+    );
+
     unawaited(
       storage.save(
-        UserProgress(
-          currentLevel: level,
-          coins: s.coins,
-          hints: s.hints,
-          wrongAttempts: midLevel ? s.wrongAttempts : 0,
-          currentImageIndex: midLevel ? s.currentImageIndex : 0,
-          maxUnlockedImageIndex: midLevel ? s.maxUnlockedImageIndex : 0,
-          showOptions: midLevel && s.showOptions,
-          showContinent: midLevel && s.showContinent,
+        GameSave(
+          user: _user,
+          progress: _progress,
+          session: midLevel
+              ? LevelSession(
+                  currentImageIndex: s.currentImageIndex,
+                  maxUnlockedImageIndex: s.maxUnlockedImageIndex,
+                  showOptions: s.showOptions,
+                  showContinent: s.showContinent,
+                )
+              : const LevelSession(),
         ),
       ),
     );
   }
 
+  // Stars: 3 for no wrong guesses, 2 for one, 1 for two. Replays only ever
+  // improve the stored result.
+  void _recordCompletion(QuizState s) {
+    final stars = (User.maxLives - s.wrongAttempts).clamp(1, 3);
+    final mode = s.question.mode;
+    final i = _progress.indexWhere(
+      (p) => p.mode == mode && p.level == s.currentLevel,
+    );
+    final best = i == -1 || stars > _progress[i].stars
+        ? stars
+        : _progress[i].stars;
+    final entry = QuizProgress(
+      mode: mode,
+      level: s.currentLevel,
+      completed: true,
+      stars: best,
+    );
+
+    if (i == -1) {
+      _progress.add(entry);
+    } else {
+      _progress[i] = entry;
+    }
+  }
+
   void submitAnswer(String answer) {
+    final before = state;
     _submitAnswer(answer);
+    final after = state;
+
+    if (before != null && after != null) {
+      var stats = _user.statistics;
+
+      if (after.wrongAttempts > before.wrongAttempts) {
+        stats = stats.copyWith(totalWrong: stats.totalWrong + 1);
+      }
+      if (after.gameOver && !before.gameOver) {
+        stats = stats.copyWith(gamesLost: stats.gamesLost + 1);
+      }
+      if (after.isCorrect && !before.isCorrect) {
+        stats = stats.copyWith(totalCorrect: stats.totalCorrect + 1);
+        _recordCompletion(after);
+      }
+
+      _user = _user.copyWith(statistics: stats);
+    }
+
     _save();
   }
 
@@ -270,6 +336,11 @@ class QuizController {
       answered: true,
       isCorrect: false,
       gameOver: false,
+    );
+    _user = _user.copyWith(
+      statistics: _user.statistics.copyWith(
+        totalSkipped: _user.statistics.totalSkipped + 1,
+      ),
     );
     _save();
 

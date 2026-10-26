@@ -1,17 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:ventur_2/widgets/fullscreen_image_viewer.dart';
+import 'package:ventur_2/widgets/smart_image.dart';
 
 /// Image with a magnifying-glass toggle (bottom-left) and a full-screen
 /// button (bottom-right). With the magnifier on, touching/dragging over the
 /// image shows a lens that magnifies the area under the finger.
+///
+/// [imagePath] may be a network URL or a bundled asset; [fallbackUrl] is shown
+/// if a network image fails to load.
 class ZoomableImage extends StatefulWidget {
   final String imagePath;
+  final String? fallbackUrl;
   final double height;
   final double borderRadius;
 
   const ZoomableImage({
     super.key,
     required this.imagePath,
+    this.fallbackUrl,
     required this.height,
     this.borderRadius = 16,
   });
@@ -94,7 +100,11 @@ class _ZoomableImageState extends State<ZoomableImage> {
             return Stack(
               fit: StackFit.expand,
               children: [
-                Image.asset(widget.imagePath, fit: BoxFit.cover),
+                SmartImage(
+                  path: widget.imagePath,
+                  fallbackUrl: widget.fallbackUrl,
+                  fit: BoxFit.cover,
+                ),
 
                 if (_magnifierOn)
                   GestureDetector(
@@ -125,7 +135,11 @@ class _ZoomableImageState extends State<ZoomableImage> {
                   bottom: 8,
                   child: _roundButton(
                     icon: Icons.fullscreen,
-                    onTap: () => showFullscreenImage(context, widget.imagePath),
+                    onTap: () => showFullscreenImage(
+                      context,
+                      widget.imagePath,
+                      fallbackUrl: widget.fallbackUrl,
+                    ),
                   ),
                 ),
               ],

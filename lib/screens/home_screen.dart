@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ventur_2/repositories/composite_progress_storage.dart';
+import 'package:ventur_2/screens/credits_screen.dart';
 import 'package:ventur_2/screens/mode_select_screen.dart';
 import 'package:ventur_2/utils/sizes.dart';
 import 'package:ventur_2/widgets/display_buttons.dart';
@@ -6,6 +8,92 @@ import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
+
+  void _openSettings(BuildContext context) {
+    showModalBottomSheet<void>(
+      context: context,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (sheetContext) {
+        return SafeArea(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const SizedBox(height: 8),
+              Container(
+                width: 40,
+                height: 4,
+                decoration: BoxDecoration(
+                  color: Colors.black26,
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+              const SizedBox(height: 8),
+              ListTile(
+                leading: const Icon(Icons.copyright_outlined),
+                title: const Text('Credits & Attribution'),
+                subtitle: const Text('Image sources and licences'),
+                onTap: () {
+                  Navigator.pop(sheetContext);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const CreditsScreen(),
+                    ),
+                  );
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.restart_alt, color: Colors.redAccent),
+                title: const Text('Reset progress'),
+                subtitle: const Text('Start over from level 1 on this device'),
+                onTap: () async {
+                  Navigator.pop(sheetContext);
+                  await _confirmReset(context);
+                },
+              ),
+              const SizedBox(height: 8),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  Future<void> _confirmReset(BuildContext context) async {
+    final messenger = ScaffoldMessenger.of(context);
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) {
+        return AlertDialog(
+          title: const Text('Reset progress?'),
+          content: const Text(
+            'This clears your saved progress on this device and starts you '
+            'back at level 1. This cannot be undone.',
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(dialogContext, false),
+              child: const Text('Cancel'),
+            ),
+            FilledButton(
+              style: FilledButton.styleFrom(backgroundColor: Colors.redAccent),
+              onPressed: () => Navigator.pop(dialogContext, true),
+              child: const Text('Reset'),
+            ),
+          ],
+        );
+      },
+    );
+
+    if (confirmed != true) return;
+
+    await CompositeProgressStorage().clear();
+    messenger.showSnackBar(
+      const SnackBar(content: Text('Progress reset')),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -17,9 +105,7 @@ class HomeScreen extends StatelessWidget {
         elevation: 0,
         actions: [
           IconButton(
-            onPressed: () {
-              // Open settings
-            },
+            onPressed: () => _openSettings(context),
             icon: const Icon(Icons.settings, size: 32, color: Colors.white),
           ),
           const SizedBox(

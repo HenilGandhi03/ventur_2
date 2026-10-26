@@ -1,26 +1,26 @@
 import 'dart:convert';
 
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:ventur_2/models/user_progress.dart';
+import 'package:ventur_2/models/game_save.dart';
 
 abstract class ProgressStorage {
-  Future<UserProgress?> load();
-  Future<void> save(UserProgress progress);
+  Future<GameSave?> load();
+  Future<void> save(GameSave save);
   Future<void> clear();
 }
 
-/// Stores progress as a single JSON string in SharedPreferences.
+/// Stores the save as a single JSON string in SharedPreferences.
 class SharedPrefsProgressStorage implements ProgressStorage {
-  static const _key = 'user_progress_v1';
+  static const _key = 'game_save_v1';
 
   @override
-  Future<UserProgress?> load() async {
+  Future<GameSave?> load() async {
     try {
       final prefs = await SharedPreferences.getInstance();
       final raw = prefs.getString(_key);
       if (raw == null) return null;
 
-      return UserProgress.fromJson(jsonDecode(raw) as Map<String, dynamic>);
+      return GameSave.fromJson(jsonDecode(raw) as Map<String, dynamic>);
     } catch (_) {
       // Corrupt or incompatible data: start fresh rather than crash.
       return null;
@@ -28,10 +28,10 @@ class SharedPrefsProgressStorage implements ProgressStorage {
   }
 
   @override
-  Future<void> save(UserProgress progress) async {
+  Future<void> save(GameSave save) async {
     try {
       final prefs = await SharedPreferences.getInstance();
-      await prefs.setString(_key, jsonEncode(progress.toJson()));
+      await prefs.setString(_key, jsonEncode(save.toJson()));
     } catch (_) {
       // Persistence is best-effort; never break gameplay over it.
     }

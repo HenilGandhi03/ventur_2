@@ -1,0 +1,2586 @@
+{
+  "mode": "country",
+  "generatedAt": "2026-10-23T06:21:53.615Z",
+  "levels": [
+    {
+      "id": "country_fr",
+      "mode": "country",
+      "level": 1,
+      "correctAnswer": "France",
+      "continent": "Europe",
+      "description": "A Western European nation famed for its art, cuisine, fashion and wine.",
+      "funfact": "France is the most visited country in the world, drawing around 90 million tourists a year.",
+      "options": [
+        "France",
+        "Ireland",
+        "Russia",
+        "United Kingdom"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Eiffel_Tower_Paris.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Louvre_Museum_Wikimedia_Commons.jpg?width=1000",
+        "https://flagcdn.com/w1280/fr.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Eiffel Tower, Paris",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_Paris.jpg"
+        },
+        {
+          "title": "Louvre Museum, Paris",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Louvre_Museum_Wikimedia_Commons.jpg"
+        },
+        {
+          "title": "Flag of France",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_it",
+      "mode": "country",
+      "level": 2,
+      "correctAnswer": "Italy",
+      "continent": "Europe",
+      "description": "A Mediterranean country shaped like a boot, rich in history, art and food.",
+      "funfact": "Italy is home to the most UNESCO World Heritage Sites of any country on Earth.",
+      "options": [
+        "Sweden",
+        "Spain",
+        "Portugal",
+        "Italy"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Canal_Grande_Chiesa_della_Salute_e_Punta_della_Dogana_Venezia.jpg?width=1000",
+        "https://flagcdn.com/w1280/it.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Colosseum, Rome",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Colosseum_in_Rome%2C_Italy_-_April_2007.jpg"
+        },
+        {
+          "title": "Grand Canal, Venice",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Canal_Grande_Chiesa_della_Salute_e_Punta_della_Dogana_Venezia.jpg"
+        },
+        {
+          "title": "Flag of Italy",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_es",
+      "mode": "country",
+      "level": 3,
+      "correctAnswer": "Spain",
+      "continent": "Europe",
+      "description": "An Iberian country known for flamenco, beaches and bold architecture.",
+      "funfact": "Spain has the second-highest number of UNESCO World Heritage Sites in the world.",
+      "options": [
+        "Spain",
+        "Norway",
+        "Ireland",
+        "Sweden"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Sagrada_Familia_01.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Vista_de_la_Alhambra.jpg?width=1000",
+        "https://flagcdn.com/w1280/es.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Sagrada Família, Barcelona",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sagrada_Familia_01.jpg"
+        },
+        {
+          "title": "Alhambra, Granada",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vista_de_la_Alhambra.jpg"
+        },
+        {
+          "title": "Flag of Spain",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_de",
+      "mode": "country",
+      "level": 4,
+      "correctAnswer": "Germany",
+      "continent": "Europe",
+      "description": "A Central European economic powerhouse of castles, forests and festivals.",
+      "funfact": "Germany has over 1,500 varieties of beer and 20,000 castles.",
+      "options": [
+        "Switzerland",
+        "Germany",
+        "Italy",
+        "Sweden"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Brandenburger_Tor_abends.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Schloss_Neuschwanstein_2013.jpg?width=1000",
+        "https://flagcdn.com/w1280/de.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Brandenburg Gate, Berlin",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_abends.jpg"
+        },
+        {
+          "title": "Neuschwanstein Castle",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Schloss_Neuschwanstein_2013.jpg"
+        },
+        {
+          "title": "Flag of Germany",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_gb",
+      "mode": "country",
+      "level": 5,
+      "correctAnswer": "United Kingdom",
+      "continent": "Europe",
+      "description": "An island nation of rolling hills, historic cities and royal tradition.",
+      "funfact": "The UK has no single written constitution — it relies on laws and conventions.",
+      "options": [
+        "Ireland",
+        "United Kingdom",
+        "Greece",
+        "Iceland"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Palace_of_Westminster%2C_London_-_Feb_2007.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Tower_Bridge_from_Shad_Thames.jpg?width=1000",
+        "https://flagcdn.com/w1280/gb.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Big Ben & Palace of Westminster, London",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Palace_of_Westminster%2C_London_-_Feb_2007.jpg"
+        },
+        {
+          "title": "Tower Bridge, London",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tower_Bridge_from_Shad_Thames.jpg"
+        },
+        {
+          "title": "Flag of United Kingdom",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_gr",
+      "mode": "country",
+      "level": 6,
+      "correctAnswer": "Greece",
+      "continent": "Europe",
+      "description": "The cradle of Western civilisation, with ancient ruins and whitewashed isles.",
+      "funfact": "Greece has around 6,000 islands and islets, though only about 230 are inhabited.",
+      "options": [
+        "United Kingdom",
+        "Ireland",
+        "Greece",
+        "Austria"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/The_Parthenon_in_Athens.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Santorini_-_Oia_03.jpg?width=1000",
+        "https://flagcdn.com/w1280/gr.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Acropolis, Athens",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Parthenon_in_Athens.jpg"
+        },
+        {
+          "title": "Santorini",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Santorini_-_Oia_03.jpg"
+        },
+        {
+          "title": "Flag of Greece",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_nl",
+      "mode": "country",
+      "level": 7,
+      "correctAnswer": "Netherlands",
+      "continent": "Europe",
+      "description": "A low-lying country of canals, windmills, tulips and bicycles.",
+      "funfact": "About a quarter of the Netherlands lies below sea level.",
+      "options": [
+        "Russia",
+        "Netherlands",
+        "Spain",
+        "United Kingdom"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/KeizersgrachtReguliersgrachtAmsterdam.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Kinderdijk_molens.jpg?width=1000",
+        "https://flagcdn.com/w1280/nl.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Amsterdam canals",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:KeizersgrachtReguliersgrachtAmsterdam.jpg"
+        },
+        {
+          "title": "Dutch windmills, Kinderdijk",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kinderdijk_molens.jpg"
+        },
+        {
+          "title": "Flag of Netherlands",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_pt",
+      "mode": "country",
+      "level": 8,
+      "correctAnswer": "Portugal",
+      "continent": "Europe",
+      "description": "Europe's westernmost country, known for seafaring history and azulejo tiles.",
+      "funfact": "Portugal is one of the oldest nation-states in Europe, with borders largely unchanged since 1139.",
+      "options": [
+        "Austria",
+        "Sweden",
+        "Russia",
+        "Portugal"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Torre_de_Bel%C3%A9m_Lisboa-1.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Palacio_da_Pena.jpg?width=1000",
+        "https://flagcdn.com/w1280/pt.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Belém Tower, Lisbon",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Torre_de_Bel%C3%A9m_Lisboa-1.jpg"
+        },
+        {
+          "title": "Pena Palace, Sintra",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Palacio_da_Pena.jpg"
+        },
+        {
+          "title": "Flag of Portugal",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_ch",
+      "mode": "country",
+      "level": 9,
+      "correctAnswer": "Switzerland",
+      "continent": "Europe",
+      "description": "An Alpine nation of snow-capped peaks, lakes, chocolate and watchmaking.",
+      "funfact": "Switzerland has enough nuclear shelters to house its entire population.",
+      "options": [
+        "Switzerland",
+        "Russia",
+        "United Kingdom",
+        "Greece"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Matterhorn_from_Domh%C3%BCtte_-_2.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Kapellbr%C3%BCcke_Luzern.jpg?width=1000",
+        "https://flagcdn.com/w1280/ch.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Matterhorn",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Matterhorn_from_Domh%C3%BCtte_-_2.jpg"
+        },
+        {
+          "title": "Chapel Bridge, Lucerne",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kapellbr%C3%BCcke_Luzern.jpg"
+        },
+        {
+          "title": "Flag of Switzerland",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_no",
+      "mode": "country",
+      "level": 10,
+      "correctAnswer": "Norway",
+      "continent": "Europe",
+      "description": "A Scandinavian land of dramatic fjords, midnight sun and northern lights.",
+      "funfact": "Norway introduced salmon sushi to Japan in the 1980s.",
+      "options": [
+        "Spain",
+        "Greece",
+        "Norway",
+        "Iceland"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Geirangerfjord_(6-2007).jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Bryggen_i_Bergen.jpg?width=1000",
+        "https://flagcdn.com/w1280/no.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Geirangerfjord",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Geirangerfjord_(6-2007).jpg"
+        },
+        {
+          "title": "Bryggen, Bergen",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bryggen_i_Bergen.jpg"
+        },
+        {
+          "title": "Flag of Norway",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_se",
+      "mode": "country",
+      "level": 11,
+      "correctAnswer": "Sweden",
+      "continent": "Europe",
+      "description": "A Nordic country of forests, lakes, design and long summer days.",
+      "funfact": "Sweden recycles so efficiently it imports rubbish from other countries to fuel power plants.",
+      "options": [
+        "Greece",
+        "Sweden",
+        "Norway",
+        "Ireland"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Stockholm_Gamla_Stan.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Stockholm_City_Hall_June_2012.jpg?width=1000",
+        "https://flagcdn.com/w1280/se.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Gamla Stan, Stockholm",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stockholm_Gamla_Stan.jpg"
+        },
+        {
+          "title": "Stockholm City Hall",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stockholm_City_Hall_June_2012.jpg"
+        },
+        {
+          "title": "Flag of Sweden",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_at",
+      "mode": "country",
+      "level": 12,
+      "correctAnswer": "Austria",
+      "continent": "Europe",
+      "description": "An Alpine country of imperial palaces, classical music and ski slopes.",
+      "funfact": "The world's oldest zoo still in operation is in Vienna, founded in 1752.",
+      "options": [
+        "Norway",
+        "Spain",
+        "Ireland",
+        "Austria"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Schloss_Sch%C3%B6nbrunn_Wien_2014_(Zuschnitt_2).jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Hallstatt_-_Zentrum_.JPG?width=1000",
+        "https://flagcdn.com/w1280/at.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Schönbrunn Palace, Vienna",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Schloss_Sch%C3%B6nbrunn_Wien_2014_(Zuschnitt_2).jpg"
+        },
+        {
+          "title": "Hallstatt",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hallstatt_-_Zentrum_.JPG"
+        },
+        {
+          "title": "Flag of Austria",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_ie",
+      "mode": "country",
+      "level": 13,
+      "correctAnswer": "Ireland",
+      "continent": "Europe",
+      "description": "The Emerald Isle, famed for green landscapes, cliffs and literary heritage.",
+      "funfact": "Halloween originates from the ancient Irish festival of Samhain.",
+      "options": [
+        "Iceland",
+        "Greece",
+        "Ireland",
+        "Italy"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Cliffs_of_Moher_2006.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Rock_of_Cashel.jpg?width=1000",
+        "https://flagcdn.com/w1280/ie.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Cliffs of Moher",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cliffs_of_Moher_2006.jpg"
+        },
+        {
+          "title": "Rock of Cashel",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rock_of_Cashel.jpg"
+        },
+        {
+          "title": "Flag of Ireland",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_ru",
+      "mode": "country",
+      "level": 14,
+      "correctAnswer": "Russia",
+      "continent": "Europe",
+      "description": "The world's largest country, spanning Europe and Asia across 11 time zones.",
+      "funfact": "Russia is so large it borders 14 countries and spans 11 time zones.",
+      "options": [
+        "Russia",
+        "Austria",
+        "Switzerland",
+        "Spain"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Saint_Basil's_Cathedral_in_Moscow.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Panor%C3%A1mica_del_Palacio_de_Invierno%2C_San_Petersburgo%2C_Rusia%2C_2016-01-08%2C_DD_09.JPG?width=1000",
+        "https://flagcdn.com/w1280/ru.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Saint Basil's Cathedral, Moscow",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Saint_Basil's_Cathedral_in_Moscow.jpg"
+        },
+        {
+          "title": "Winter Palace, Saint Petersburg",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Panor%C3%A1mica_del_Palacio_de_Invierno%2C_San_Petersburgo%2C_Rusia%2C_2016-01-08%2C_DD_09.JPG"
+        },
+        {
+          "title": "Flag of Russia",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_is",
+      "mode": "country",
+      "level": 15,
+      "correctAnswer": "Iceland",
+      "continent": "Europe",
+      "description": "A volcanic island of geysers, glaciers, waterfalls and hot springs.",
+      "funfact": "Iceland runs almost entirely on renewable geothermal and hydro energy.",
+      "options": [
+        "Russia",
+        "Switzerland",
+        "Netherlands",
+        "Iceland"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Gullfoss%2C_an_iconic_waterfall_of_Iceland.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Hallgr%C3%ADmskirkja_20051001.jpg?width=1000",
+        "https://flagcdn.com/w1280/is.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Gullfoss waterfall",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gullfoss%2C_an_iconic_waterfall_of_Iceland.jpg"
+        },
+        {
+          "title": "Hallgrímskirkja, Reykjavík",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hallgr%C3%ADmskirkja_20051001.jpg"
+        },
+        {
+          "title": "Flag of Iceland",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_jp",
+      "mode": "country",
+      "level": 16,
+      "correctAnswer": "Japan",
+      "continent": "Asia",
+      "description": "An East Asian archipelago blending ancient temples with neon megacities.",
+      "funfact": "Japan has more than 5 million vending machines — roughly one for every 23 people.",
+      "options": [
+        "Thailand",
+        "Israel",
+        "Japan",
+        "Turkey"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Fuji_from_Hotel_Mt_Fuji_1994-2-7.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Fushimi_Inari-taisha%2C_senbontorii.jpg?width=1000",
+        "https://flagcdn.com/w1280/jp.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Mount Fuji",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_from_Hotel_Mt_Fuji_1994-2-7.jpg"
+        },
+        {
+          "title": "Fushimi Inari Shrine, Kyoto",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fushimi_Inari-taisha%2C_senbontorii.jpg"
+        },
+        {
+          "title": "Flag of Japan",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_cn",
+      "mode": "country",
+      "level": 17,
+      "correctAnswer": "China",
+      "continent": "Asia",
+      "description": "A vast East Asian civilisation with millennia of history and dynamic cities.",
+      "funfact": "The Great Wall of China is over 21,000 km long in total.",
+      "options": [
+        "United Arab Emirates",
+        "Indonesia",
+        "China",
+        "Israel"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/The_Great_Wall_of_China_at_Jinshanling-edit.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Forbidden_City_Beijing_Shenwumen_Gate.JPG?width=1000",
+        "https://flagcdn.com/w1280/cn.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Great Wall of China",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Great_Wall_of_China_at_Jinshanling-edit.jpg"
+        },
+        {
+          "title": "Forbidden City, Beijing",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Forbidden_City_Beijing_Shenwumen_Gate.JPG"
+        },
+        {
+          "title": "Flag of China",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_in",
+      "mode": "country",
+      "level": 18,
+      "correctAnswer": "India",
+      "continent": "Asia",
+      "description": "A South Asian subcontinent of extraordinary diversity, colour and spice.",
+      "funfact": "India is home to the wettest inhabited place on Earth — Mawsynram.",
+      "options": [
+        "Jordan",
+        "Vietnam",
+        "India",
+        "Cambodia"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Taj_Mahal_(Edited).jpeg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Amber_Fort_Jaipur.jpg?width=1000",
+        "https://flagcdn.com/w1280/in.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Taj Mahal, Agra",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taj_Mahal_(Edited).jpeg"
+        },
+        {
+          "title": "Amber Fort, Jaipur",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amber_Fort_Jaipur.jpg"
+        },
+        {
+          "title": "Flag of India",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_th",
+      "mode": "country",
+      "level": 19,
+      "correctAnswer": "Thailand",
+      "continent": "Asia",
+      "description": "A Southeast Asian kingdom of gilded temples, beaches and street food.",
+      "funfact": "Bangkok's full ceremonial name is the longest city name in the world.",
+      "options": [
+        "United Arab Emirates",
+        "Malaysia",
+        "China",
+        "Thailand"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Wat_Arun_(Bangkok).jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Ko_Phi_Phi_Le.jpg?width=1000",
+        "https://flagcdn.com/w1280/th.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Wat Arun, Bangkok",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wat_Arun_(Bangkok).jpg"
+        },
+        {
+          "title": "Phi Phi Islands",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ko_Phi_Phi_Le.jpg"
+        },
+        {
+          "title": "Flag of Thailand",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_vn",
+      "mode": "country",
+      "level": 20,
+      "correctAnswer": "Vietnam",
+      "continent": "Asia",
+      "description": "A Southeast Asian country of limestone karsts, rice terraces and pho.",
+      "funfact": "Vietnam is the world's second-largest exporter of coffee.",
+      "options": [
+        "Nepal",
+        "Vietnam",
+        "Israel",
+        "Singapore"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Halong_Bay%2C_Vietnam.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/C%E1%BA%A7u_V%C3%A0ng_-_Golden_Bridge.jpg?width=1000",
+        "https://flagcdn.com/w1280/vn.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Ha Long Bay",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Halong_Bay%2C_Vietnam.jpg"
+        },
+        {
+          "title": "Golden Bridge, Da Nang",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:C%E1%BA%A7u_V%C3%A0ng_-_Golden_Bridge.jpg"
+        },
+        {
+          "title": "Flag of Vietnam",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_kr",
+      "mode": "country",
+      "level": 21,
+      "correctAnswer": "South Korea",
+      "continent": "Asia",
+      "description": "An East Asian nation fusing palaces and hanok villages with K-pop and tech.",
+      "funfact": "South Korea has the fastest average internet speeds in the world.",
+      "options": [
+        "Cambodia",
+        "Jordan",
+        "China",
+        "South Korea"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Korea-Seoul-Gyeongbokgung-Geunjeongjeon-01.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Bukchon_Hanok_Village.jpg?width=1000",
+        "https://flagcdn.com/w1280/kr.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Gyeongbokgung Palace, Seoul",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korea-Seoul-Gyeongbokgung-Geunjeongjeon-01.jpg"
+        },
+        {
+          "title": "Bukchon Hanok Village",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bukchon_Hanok_Village.jpg"
+        },
+        {
+          "title": "Flag of South Korea",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_id",
+      "mode": "country",
+      "level": 22,
+      "correctAnswer": "Indonesia",
+      "continent": "Asia",
+      "description": "The world's largest archipelago, with over 17,000 islands and active volcanoes.",
+      "funfact": "Indonesia is made up of more than 17,000 islands.",
+      "options": [
+        "Indonesia",
+        "Malaysia",
+        "United Arab Emirates",
+        "China"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Borobudur-Nothwest-view.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Tegallalang%2C_Bali.jpg?width=1000",
+        "https://flagcdn.com/w1280/id.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Borobudur Temple",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Borobudur-Nothwest-view.jpg"
+        },
+        {
+          "title": "Rice terraces, Bali",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tegallalang%2C_Bali.jpg"
+        },
+        {
+          "title": "Flag of Indonesia",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_tr",
+      "mode": "country",
+      "level": 23,
+      "correctAnswer": "Turkey",
+      "continent": "Asia",
+      "description": "A transcontinental country bridging Europe and Asia across the Bosphorus.",
+      "funfact": "Istanbul is the only major city in the world that straddles two continents.",
+      "options": [
+        "South Korea",
+        "Cambodia",
+        "Turkey",
+        "Nepal"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Hagia_Sophia_Mars_2013.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Cappadocia_balloon_trip%2C_G%C3%B6reme%2C_Nev%C5%9Fehir%2C_Turkey.jpg?width=1000",
+        "https://flagcdn.com/w1280/tr.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Hagia Sophia, Istanbul",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Mars_2013.jpg"
+        },
+        {
+          "title": "Cappadocia",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cappadocia_balloon_trip%2C_G%C3%B6reme%2C_Nev%C5%9Fehir%2C_Turkey.jpg"
+        },
+        {
+          "title": "Flag of Turkey",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_ae",
+      "mode": "country",
+      "level": 24,
+      "correctAnswer": "United Arab Emirates",
+      "continent": "Asia",
+      "description": "A Gulf federation of futuristic skylines rising from the desert.",
+      "funfact": "The Burj Khalifa in Dubai is the tallest building in the world at 828 metres.",
+      "options": [
+        "Nepal",
+        "United Arab Emirates",
+        "Malaysia",
+        "Israel"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Burj_Khalifa.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Sheikh_Zayed_Mosque.jpg?width=1000",
+        "https://flagcdn.com/w1280/ae.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Burj Khalifa, Dubai",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Burj_Khalifa.jpg"
+        },
+        {
+          "title": "Sheikh Zayed Mosque, Abu Dhabi",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sheikh_Zayed_Mosque.jpg"
+        },
+        {
+          "title": "Flag of United Arab Emirates",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_np",
+      "mode": "country",
+      "level": 25,
+      "correctAnswer": "Nepal",
+      "continent": "Asia",
+      "description": "A Himalayan nation home to eight of the world's ten highest peaks.",
+      "funfact": "Nepal's flag is the only national flag that is not rectangular.",
+      "options": [
+        "Singapore",
+        "Vietnam",
+        "South Korea",
+        "Nepal"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Bodnath_Stupa.jpg?width=1000",
+        "https://flagcdn.com/w1280/np.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Mount Everest",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg"
+        },
+        {
+          "title": "Boudhanath Stupa, Kathmandu",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bodnath_Stupa.jpg"
+        },
+        {
+          "title": "Flag of Nepal",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_kh",
+      "mode": "country",
+      "level": 26,
+      "correctAnswer": "Cambodia",
+      "continent": "Asia",
+      "description": "A Southeast Asian kingdom defined by the vast temples of Angkor.",
+      "funfact": "Angkor Wat is the largest religious monument in the world.",
+      "options": [
+        "Malaysia",
+        "Cambodia",
+        "India",
+        "Thailand"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Angkor_Wat.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Bayon_Angkor_Relief1.jpg?width=1000",
+        "https://flagcdn.com/w1280/kh.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Angkor Wat",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Angkor_Wat.jpg"
+        },
+        {
+          "title": "Bayon Temple faces",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bayon_Angkor_Relief1.jpg"
+        },
+        {
+          "title": "Flag of Cambodia",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_my",
+      "mode": "country",
+      "level": 27,
+      "correctAnswer": "Malaysia",
+      "continent": "Asia",
+      "description": "A Southeast Asian country of rainforests, beaches and modern skylines.",
+      "funfact": "The Petronas Towers were the tallest buildings in the world from 1998 to 2004.",
+      "options": [
+        "Vietnam",
+        "Thailand",
+        "Malaysia",
+        "Indonesia"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Petronas_Panorama_II.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Batu_Caves%2C_KL%2C_Malaysia.jpg?width=1000",
+        "https://flagcdn.com/w1280/my.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Petronas Towers, Kuala Lumpur",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Petronas_Panorama_II.jpg"
+        },
+        {
+          "title": "Batu Caves",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Batu_Caves%2C_KL%2C_Malaysia.jpg"
+        },
+        {
+          "title": "Flag of Malaysia",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_sg",
+      "mode": "country",
+      "level": 28,
+      "correctAnswer": "Singapore",
+      "continent": "Asia",
+      "description": "A city-state and global hub famed for gardens, food and skyline.",
+      "funfact": "Singapore is one of only three surviving city-states in the world.",
+      "options": [
+        "Indonesia",
+        "Singapore",
+        "Vietnam",
+        "China"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Marina_Bay_Sands_in_the_evening_-_20101120.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Supertree_Grove%2C_Gardens_by_the_Bay%2C_Singapore_-_20120617.jpg?width=1000",
+        "https://flagcdn.com/w1280/sg.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Marina Bay Sands",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marina_Bay_Sands_in_the_evening_-_20101120.jpg"
+        },
+        {
+          "title": "Gardens by the Bay Supertrees",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Supertree_Grove%2C_Gardens_by_the_Bay%2C_Singapore_-_20120617.jpg"
+        },
+        {
+          "title": "Flag of Singapore",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_jo",
+      "mode": "country",
+      "level": 29,
+      "correctAnswer": "Jordan",
+      "continent": "Asia",
+      "description": "A Middle Eastern kingdom of desert canyons and ancient rock-cut cities.",
+      "funfact": "Petra was carved into rose-red rock over 2,000 years ago by the Nabataeans.",
+      "options": [
+        "Vietnam",
+        "Jordan",
+        "United Arab Emirates",
+        "South Korea"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/The_Treasury%2C_Petra_(5340588594).jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Wadi_Rum_1.jpg?width=1000",
+        "https://flagcdn.com/w1280/jo.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Petra Treasury",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Treasury%2C_Petra_(5340588594).jpg"
+        },
+        {
+          "title": "Wadi Rum desert",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wadi_Rum_1.jpg"
+        },
+        {
+          "title": "Flag of Jordan",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_il",
+      "mode": "country",
+      "level": 30,
+      "correctAnswer": "Israel",
+      "continent": "Asia",
+      "description": "A Middle Eastern country at the crossroads of major world religions.",
+      "funfact": "The Dead Sea, on Israel's border, is the lowest point on Earth's land surface.",
+      "options": [
+        "Japan",
+        "Vietnam",
+        "India",
+        "Israel"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Jerusalem_Dome_of_the_rock_BW_14.JPG?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Israel-2013-Aerial_21-Masada.jpg?width=1000",
+        "https://flagcdn.com/w1280/il.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Western Wall & Dome of the Rock, Jerusalem",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jerusalem_Dome_of_the_rock_BW_14.JPG"
+        },
+        {
+          "title": "Masada",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Israel-2013-Aerial_21-Masada.jpg"
+        },
+        {
+          "title": "Flag of Israel",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_eg",
+      "mode": "country",
+      "level": 31,
+      "correctAnswer": "Egypt",
+      "continent": "Africa",
+      "description": "A North African cradle of civilisation along the life-giving Nile.",
+      "funfact": "The Great Pyramid of Giza is the only surviving wonder of the ancient world.",
+      "options": [
+        "Nigeria",
+        "Egypt",
+        "Tanzania",
+        "Namibia"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Kheops-Pyramid.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Sphinx_of_Giza_-_20080716a.jpg?width=1000",
+        "https://flagcdn.com/w1280/eg.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Pyramids of Giza",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kheops-Pyramid.jpg"
+        },
+        {
+          "title": "Great Sphinx of Giza",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Sphinx_of_Giza_-_20080716a.jpg"
+        },
+        {
+          "title": "Flag of Egypt",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_za",
+      "mode": "country",
+      "level": 32,
+      "correctAnswer": "South Africa",
+      "continent": "Africa",
+      "description": "A diverse nation at Africa's southern tip, the \"Rainbow Nation\".",
+      "funfact": "South Africa has three capital cities: Pretoria, Cape Town and Bloemfontein.",
+      "options": [
+        "Madagascar",
+        "Egypt",
+        "South Africa",
+        "Nigeria"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Table_Mountain_DownUnder.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Cape_of_Good_Hope.jpg?width=1000",
+        "https://flagcdn.com/w1280/za.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Table Mountain, Cape Town",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Table_Mountain_DownUnder.jpg"
+        },
+        {
+          "title": "Cape of Good Hope",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cape_of_Good_Hope.jpg"
+        },
+        {
+          "title": "Flag of South Africa",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_ma",
+      "mode": "country",
+      "level": 33,
+      "correctAnswer": "Morocco",
+      "continent": "Africa",
+      "description": "A North African country of medinas, deserts and the Atlas Mountains.",
+      "funfact": "The University of al-Qarawiyyin in Fez is the oldest existing university in the world.",
+      "options": [
+        "Morocco",
+        "Ghana",
+        "South Africa",
+        "Namibia"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Marrakech_-_Place_Jemaa_El_Fna.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Chefchaouen%2C_the_Blue_City.jpg?width=1000",
+        "https://flagcdn.com/w1280/ma.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Jemaa el-Fnaa, Marrakesh",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marrakech_-_Place_Jemaa_El_Fna.jpg"
+        },
+        {
+          "title": "Chefchaouen blue city",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chefchaouen%2C_the_Blue_City.jpg"
+        },
+        {
+          "title": "Flag of Morocco",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_ke",
+      "mode": "country",
+      "level": 34,
+      "correctAnswer": "Kenya",
+      "continent": "Africa",
+      "description": "An East African country famed for safaris and the Great Rift Valley.",
+      "funfact": "The Maasai Mara hosts the Great Migration of over a million wildebeest each year.",
+      "options": [
+        "Nigeria",
+        "Madagascar",
+        "South Africa",
+        "Kenya"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Masai_Mara_at_Sunrise.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Kenya.jpg?width=1000",
+        "https://flagcdn.com/w1280/ke.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Maasai Mara safari",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Masai_Mara_at_Sunrise.jpg"
+        },
+        {
+          "title": "Mount Kenya",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Kenya.jpg"
+        },
+        {
+          "title": "Flag of Kenya",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_tz",
+      "mode": "country",
+      "level": 35,
+      "correctAnswer": "Tanzania",
+      "continent": "Africa",
+      "description": "An East African nation of Kilimanjaro, Serengeti plains and Zanzibar.",
+      "funfact": "Mount Kilimanjaro is the highest free-standing mountain in the world.",
+      "options": [
+        "Madagascar",
+        "Morocco",
+        "Kenya",
+        "Tanzania"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Kilimanjaro_Dec_2009_edit1.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Serengeti_Lion_running_saturated.jpg?width=1000",
+        "https://flagcdn.com/w1280/tz.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Mount Kilimanjaro",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Kilimanjaro_Dec_2009_edit1.jpg"
+        },
+        {
+          "title": "Serengeti plains",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Serengeti_Lion_running_saturated.jpg"
+        },
+        {
+          "title": "Flag of Tanzania",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_ng",
+      "mode": "country",
+      "level": 36,
+      "correctAnswer": "Nigeria",
+      "continent": "Africa",
+      "description": "West Africa's most populous nation and a cultural and economic giant.",
+      "funfact": "Nigeria is the most populous country in Africa, with over 200 million people.",
+      "options": [
+        "Morocco",
+        "Nigeria",
+        "Ethiopia",
+        "Ghana"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Zuma_Rock.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Lagos_Island_2.jpg?width=1000",
+        "https://flagcdn.com/w1280/ng.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Zuma Rock",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zuma_Rock.jpg"
+        },
+        {
+          "title": "Lagos skyline",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lagos_Island_2.jpg"
+        },
+        {
+          "title": "Flag of Nigeria",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_et",
+      "mode": "country",
+      "level": 37,
+      "correctAnswer": "Ethiopia",
+      "continent": "Africa",
+      "description": "An ancient highland nation, one of the oldest in the world.",
+      "funfact": "Ethiopia follows a unique calendar that is about seven to eight years behind the Gregorian one.",
+      "options": [
+        "Nigeria",
+        "Ethiopia",
+        "Kenya",
+        "South Africa"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Bete_Giyorgis_01.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Simien_Mountains_National_Park.jpg?width=1000",
+        "https://flagcdn.com/w1280/et.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Rock-hewn churches of Lalibela",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bete_Giyorgis_01.jpg"
+        },
+        {
+          "title": "Simien Mountains",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Simien_Mountains_National_Park.jpg"
+        },
+        {
+          "title": "Flag of Ethiopia",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_gh",
+      "mode": "country",
+      "level": 38,
+      "correctAnswer": "Ghana",
+      "continent": "Africa",
+      "description": "A West African country known for gold, cocoa and warm hospitality.",
+      "funfact": "Ghana was the first sub-Saharan African country to gain independence, in 1957.",
+      "options": [
+        "Namibia",
+        "Kenya",
+        "Ghana",
+        "Morocco"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Cape_Coast_Castle.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Kakum_National_Park_canopy_walkway.jpg?width=1000",
+        "https://flagcdn.com/w1280/gh.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Cape Coast Castle",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cape_Coast_Castle.jpg"
+        },
+        {
+          "title": "Kakum canopy walk",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kakum_National_Park_canopy_walkway.jpg"
+        },
+        {
+          "title": "Flag of Ghana",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_na",
+      "mode": "country",
+      "level": 39,
+      "correctAnswer": "Namibia",
+      "continent": "Africa",
+      "description": "A southern African land of towering red dunes and desert wildlife.",
+      "funfact": "Namibia's Sossusvlei is home to some of the tallest sand dunes on Earth.",
+      "options": [
+        "Nigeria",
+        "Namibia",
+        "South Africa",
+        "Ghana"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Dune_in_Sossusvlei%2C_Namibia.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Deadvlei%2C_Namib-Naukluft_National_Park%2C_Namibia.jpg?width=1000",
+        "https://flagcdn.com/w1280/na.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Sossusvlei dunes",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dune_in_Sossusvlei%2C_Namibia.jpg"
+        },
+        {
+          "title": "Deadvlei",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Deadvlei%2C_Namib-Naukluft_National_Park%2C_Namibia.jpg"
+        },
+        {
+          "title": "Flag of Namibia",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_mg",
+      "mode": "country",
+      "level": 40,
+      "correctAnswer": "Madagascar",
+      "continent": "Africa",
+      "description": "A vast Indian Ocean island with wildlife found nowhere else on Earth.",
+      "funfact": "Around 90% of Madagascar's wildlife is found nowhere else on Earth.",
+      "options": [
+        "Ghana",
+        "Namibia",
+        "Morocco",
+        "Madagascar"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Baobab_Avenue%2C_Madagascar.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Tsingy_de_Bemaraha.jpg?width=1000",
+        "https://flagcdn.com/w1280/mg.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Avenue of the Baobabs",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baobab_Avenue%2C_Madagascar.jpg"
+        },
+        {
+          "title": "Tsingy de Bemaraha",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsingy_de_Bemaraha.jpg"
+        },
+        {
+          "title": "Flag of Madagascar",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_us",
+      "mode": "country",
+      "level": 41,
+      "correctAnswer": "United States",
+      "continent": "North America",
+      "description": "A continent-spanning nation of varied landscapes and global cities.",
+      "funfact": "The US has no official national language at the federal level.",
+      "options": [
+        "Mexico",
+        "United States",
+        "Jamaica",
+        "Canada"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Statue_of_Liberty_7.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Grand_Canyon_view_from_Pima_Point_2010.jpg?width=1000",
+        "https://flagcdn.com/w1280/us.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Statue of Liberty, New York",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Statue_of_Liberty_7.jpg"
+        },
+        {
+          "title": "Grand Canyon",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_view_from_Pima_Point_2010.jpg"
+        },
+        {
+          "title": "Flag of United States",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_ca",
+      "mode": "country",
+      "level": 42,
+      "correctAnswer": "Canada",
+      "continent": "North America",
+      "description": "The world's second-largest country, of vast wilderness and friendly cities.",
+      "funfact": "Canada has more lakes than the rest of the world's lakes combined.",
+      "options": [
+        "Cuba",
+        "Canada",
+        "Guatemala",
+        "United States"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Moraine_Lake_17092005.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Toronto_-_ON_-_Toronto_Harbourfront7.jpg?width=1000",
+        "https://flagcdn.com/w1280/ca.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Moraine Lake, Banff",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moraine_Lake_17092005.jpg"
+        },
+        {
+          "title": "CN Tower, Toronto",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toronto_-_ON_-_Toronto_Harbourfront7.jpg"
+        },
+        {
+          "title": "Flag of Canada",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_mx",
+      "mode": "country",
+      "level": 43,
+      "correctAnswer": "Mexico",
+      "continent": "North America",
+      "description": "A vibrant country of ancient pyramids, beaches and rich cuisine.",
+      "funfact": "Mexico introduced chocolate, chillies and corn to the rest of the world.",
+      "options": [
+        "Cuba",
+        "United States",
+        "Mexico",
+        "Jamaica"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Chichen_Itza_3.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Teotihuacan-Sun-Pyramid.jpg?width=1000",
+        "https://flagcdn.com/w1280/mx.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Chichén Itzá",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chichen_Itza_3.jpg"
+        },
+        {
+          "title": "Teotihuacan Pyramids",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teotihuacan-Sun-Pyramid.jpg"
+        },
+        {
+          "title": "Flag of Mexico",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_cu",
+      "mode": "country",
+      "level": 44,
+      "correctAnswer": "Cuba",
+      "continent": "North America",
+      "description": "A Caribbean island of colourful old towns, vintage cars and music.",
+      "funfact": "Classic 1950s American cars still fill the streets of Havana.",
+      "options": [
+        "Mexico",
+        "Canada",
+        "Jamaica",
+        "Cuba"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/La_Habana_Vieja%2C_Cuba.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Capitolio_de_La_Habana.jpg?width=1000",
+        "https://flagcdn.com/w1280/cu.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Old Havana",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_Habana_Vieja%2C_Cuba.jpg"
+        },
+        {
+          "title": "El Capitolio, Havana",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Capitolio_de_La_Habana.jpg"
+        },
+        {
+          "title": "Flag of Cuba",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_jm",
+      "mode": "country",
+      "level": 45,
+      "correctAnswer": "Jamaica",
+      "continent": "North America",
+      "description": "A Caribbean island, birthplace of reggae and lush tropical scenery.",
+      "funfact": "Jamaica was the first Caribbean country to gain independence, in 1962.",
+      "options": [
+        "Mexico",
+        "Jamaica",
+        "Canada",
+        "Guatemala"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Dunns_River_Falls.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Blue_Mountains_Jamaica.jpg?width=1000",
+        "https://flagcdn.com/w1280/jm.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Dunn's River Falls",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dunns_River_Falls.jpg"
+        },
+        {
+          "title": "Blue Mountains",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blue_Mountains_Jamaica.jpg"
+        },
+        {
+          "title": "Flag of Jamaica",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_gt",
+      "mode": "country",
+      "level": 46,
+      "correctAnswer": "Guatemala",
+      "continent": "North America",
+      "description": "A Central American country of Mayan ruins, volcanoes and colonial towns.",
+      "funfact": "The quetzal, Guatemala's national bird, also lends its name to the currency.",
+      "options": [
+        "Canada",
+        "Guatemala",
+        "Jamaica",
+        "Mexico"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Tikal_Temple1_2006_08_11.JPG?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Antigua_Guatemala_1.JPG?width=1000",
+        "https://flagcdn.com/w1280/gt.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Tikal Mayan ruins",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tikal_Temple1_2006_08_11.JPG"
+        },
+        {
+          "title": "Antigua Guatemala",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antigua_Guatemala_1.JPG"
+        },
+        {
+          "title": "Flag of Guatemala",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_br",
+      "mode": "country",
+      "level": 47,
+      "correctAnswer": "Brazil",
+      "continent": "South America",
+      "description": "South America's largest country, home to the Amazon and Carnival.",
+      "funfact": "The Amazon rainforest produces about 20% of the world's oxygen.",
+      "options": [
+        "Brazil",
+        "Colombia",
+        "Ecuador",
+        "Peru"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Cristo_Redentor_-_Rio_de_Janeiro%2C_Brasil.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/P%C3%A3o_de_A%C3%A7%C3%BAcar_visto_do_Corcovado.jpg?width=1000",
+        "https://flagcdn.com/w1280/br.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Christ the Redeemer, Rio de Janeiro",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cristo_Redentor_-_Rio_de_Janeiro%2C_Brasil.jpg"
+        },
+        {
+          "title": "Sugarloaf Mountain, Rio",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:P%C3%A3o_de_A%C3%A7%C3%BAcar_visto_do_Corcovado.jpg"
+        },
+        {
+          "title": "Flag of Brazil",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_ar",
+      "mode": "country",
+      "level": 48,
+      "correctAnswer": "Argentina",
+      "continent": "South America",
+      "description": "A land of tango, beef, the pampas and the peaks of Patagonia.",
+      "funfact": "Argentina is home to both the highest and lowest points in the Southern Hemisphere.",
+      "options": [
+        "Venezuela",
+        "Chile",
+        "Argentina",
+        "Bolivia"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Perito_Moreno_Glacier_Patagonia_Argentina_Luca_Galuzzi_2005.JPG?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Iguazu_Falls.jpg?width=1000",
+        "https://flagcdn.com/w1280/ar.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Perito Moreno Glacier",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Perito_Moreno_Glacier_Patagonia_Argentina_Luca_Galuzzi_2005.JPG"
+        },
+        {
+          "title": "Iguazú Falls",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iguazu_Falls.jpg"
+        },
+        {
+          "title": "Flag of Argentina",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_pe",
+      "mode": "country",
+      "level": 49,
+      "correctAnswer": "Peru",
+      "continent": "South America",
+      "description": "An Andean country of Incan heritage, high peaks and ancient trails.",
+      "funfact": "Peru has more than 3,000 varieties of potato.",
+      "options": [
+        "Bolivia",
+        "Argentina",
+        "Venezuela",
+        "Peru"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Machu_Picchu%2C_Peru.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Vinicunca_-_Rainbow_Mountain.jpg?width=1000",
+        "https://flagcdn.com/w1280/pe.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Machu Picchu",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Machu_Picchu%2C_Peru.jpg"
+        },
+        {
+          "title": "Rainbow Mountain (Vinicunca)",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vinicunca_-_Rainbow_Mountain.jpg"
+        },
+        {
+          "title": "Flag of Peru",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_cl",
+      "mode": "country",
+      "level": 50,
+      "correctAnswer": "Chile",
+      "continent": "South America",
+      "description": "A long, narrow country stretching from desert to Antarctic fjords.",
+      "funfact": "The Atacama Desert in Chile is the driest non-polar desert on Earth.",
+      "options": [
+        "Bolivia",
+        "Venezuela",
+        "Peru",
+        "Chile"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Moai_Rano_raraku.jpg?width=1000",
+        "https://flagcdn.com/w1280/cl.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Torres del Paine",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cuernos_del_Paine_from_Lake_Peho%C3%A9.jpg"
+        },
+        {
+          "title": "Moai of Easter Island",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moai_Rano_raraku.jpg"
+        },
+        {
+          "title": "Flag of Chile",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_co",
+      "mode": "country",
+      "level": 51,
+      "correctAnswer": "Colombia",
+      "continent": "South America",
+      "description": "A country of Caribbean coasts, coffee highlands and colourful cities.",
+      "funfact": "Colombia is the only South American country with coastlines on both the Pacific and the Caribbean.",
+      "options": [
+        "Venezuela",
+        "Colombia",
+        "Bolivia",
+        "Chile"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Cartagena_de_Indias_-_Ciudad_amurallada.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Ca%C3%B1o_Cristales.jpg?width=1000",
+        "https://flagcdn.com/w1280/co.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Cartagena old city",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cartagena_de_Indias_-_Ciudad_amurallada.jpg"
+        },
+        {
+          "title": "Caño Cristales river",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ca%C3%B1o_Cristales.jpg"
+        },
+        {
+          "title": "Flag of Colombia",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_bo",
+      "mode": "country",
+      "level": 52,
+      "correctAnswer": "Bolivia",
+      "continent": "South America",
+      "description": "A high-altitude country of salt flats, altiplano and Andean culture.",
+      "funfact": "The Salar de Uyuni is the largest salt flat in the world, mirroring the sky when wet.",
+      "options": [
+        "Venezuela",
+        "Bolivia",
+        "Colombia",
+        "Ecuador"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Salar_de_Uyuni%2C_Bolivia.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Titicaca_on_the_Andes_from_Bolivia.jpg?width=1000",
+        "https://flagcdn.com/w1280/bo.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Salar de Uyuni salt flat",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salar_de_Uyuni%2C_Bolivia.jpg"
+        },
+        {
+          "title": "Lake Titicaca",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Titicaca_on_the_Andes_from_Bolivia.jpg"
+        },
+        {
+          "title": "Flag of Bolivia",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_ec",
+      "mode": "country",
+      "level": 53,
+      "correctAnswer": "Ecuador",
+      "continent": "South America",
+      "description": "An equatorial country spanning Andes, Amazon and the Galápagos.",
+      "funfact": "Ecuador is named after the equator, which runs right through it.",
+      "options": [
+        "Bolivia",
+        "Ecuador",
+        "Peru",
+        "Argentina"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Centro_Hist%C3%B3rico_de_Quito_pichincha_ecuador.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Gal%C3%A1pagos_giant_tortoise.jpg?width=1000",
+        "https://flagcdn.com/w1280/ec.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Quito historic centre",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Centro_Hist%C3%B3rico_de_Quito_pichincha_ecuador.jpg"
+        },
+        {
+          "title": "Galápagos wildlife",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gal%C3%A1pagos_giant_tortoise.jpg"
+        },
+        {
+          "title": "Flag of Ecuador",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_ve",
+      "mode": "country",
+      "level": 54,
+      "correctAnswer": "Venezuela",
+      "continent": "South America",
+      "description": "A country of Caribbean coast, vast plains and the world's tallest waterfall.",
+      "funfact": "Angel Falls in Venezuela is the world's tallest uninterrupted waterfall at 979 m.",
+      "options": [
+        "Brazil",
+        "Venezuela",
+        "Bolivia",
+        "Peru"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Angel_Falls.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Mount_Roraima.jpg?width=1000",
+        "https://flagcdn.com/w1280/ve.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Angel Falls",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Angel_Falls.jpg"
+        },
+        {
+          "title": "Roraima tepui",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Roraima.jpg"
+        },
+        {
+          "title": "Flag of Venezuela",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_au",
+      "mode": "country",
+      "level": 55,
+      "correctAnswer": "Australia",
+      "continent": "Oceania",
+      "description": "An island continent of outback, reefs and laid-back coastal cities.",
+      "funfact": "Australia is home to the Great Barrier Reef, the largest living structure on Earth.",
+      "options": [
+        "Vanuatu",
+        "Fiji",
+        "Australia",
+        "New Zealand"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Sydney_Opera_House_-_Dec_2008.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Uluru%2C_helicopter_view%2C_cropped.jpg?width=1000",
+        "https://flagcdn.com/w1280/au.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Sydney Opera House",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_-_Dec_2008.jpg"
+        },
+        {
+          "title": "Uluru (Ayers Rock)",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Uluru%2C_helicopter_view%2C_cropped.jpg"
+        },
+        {
+          "title": "Flag of Australia",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_nz",
+      "mode": "country",
+      "level": 56,
+      "correctAnswer": "New Zealand",
+      "continent": "Oceania",
+      "description": "A Pacific nation of fjords, volcanoes, glaciers and rolling green hills.",
+      "funfact": "New Zealand has around six times as many sheep as people.",
+      "options": [
+        "Papua New Guinea",
+        "New Zealand",
+        "Samoa",
+        "Vanuatu"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Milford_Sound_(Piopiotahi).jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Church_of_the_Good_Shepherd%2C_Lake_Tekapo.jpg?width=1000",
+        "https://flagcdn.com/w1280/nz.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Milford Sound",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Milford_Sound_(Piopiotahi).jpg"
+        },
+        {
+          "title": "Lake Tekapo & Mount Cook",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Church_of_the_Good_Shepherd%2C_Lake_Tekapo.jpg"
+        },
+        {
+          "title": "Flag of New Zealand",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_fj",
+      "mode": "country",
+      "level": 57,
+      "correctAnswer": "Fiji",
+      "continent": "Oceania",
+      "description": "A South Pacific archipelago of coral reefs, palm beaches and lagoons.",
+      "funfact": "Fiji is made up of more than 330 islands, about a third of them inhabited.",
+      "options": [
+        "Vanuatu",
+        "New Zealand",
+        "Papua New Guinea",
+        "Fiji"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Fiji_beach.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Mamanuca_Islands%2C_Fiji.jpg?width=1000",
+        "https://flagcdn.com/w1280/fj.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Fiji islands and lagoon",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fiji_beach.jpg"
+        },
+        {
+          "title": "Mamanuca Islands",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mamanuca_Islands%2C_Fiji.jpg"
+        },
+        {
+          "title": "Flag of Fiji",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_pg",
+      "mode": "country",
+      "level": 58,
+      "correctAnswer": "Papua New Guinea",
+      "continent": "Oceania",
+      "description": "A rugged Pacific nation of rainforests and extraordinary cultural diversity.",
+      "funfact": "Papua New Guinea has over 800 languages — the most of any country.",
+      "options": [
+        "Samoa",
+        "Papua New Guinea",
+        "Australia",
+        "New Zealand"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Huli_Wigman_PNG.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Kokoda_Track.jpg?width=1000",
+        "https://flagcdn.com/w1280/pg.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Highlands cultural dress",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Huli_Wigman_PNG.jpg"
+        },
+        {
+          "title": "Kokoda rainforest",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kokoda_Track.jpg"
+        },
+        {
+          "title": "Flag of Papua New Guinea",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_ws",
+      "mode": "country",
+      "level": 59,
+      "correctAnswer": "Samoa",
+      "continent": "Oceania",
+      "description": "A Polynesian island nation of waterfalls, lava fields and ocean trenches.",
+      "funfact": "Samoa skipped December 30, 2011 entirely to switch sides of the international date line.",
+      "options": [
+        "Australia",
+        "Vanuatu",
+        "Samoa",
+        "Papua New Guinea"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/To_Sua_Ocean_Trench.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Lalomanu_Beach%2C_Samoa.jpg?width=1000",
+        "https://flagcdn.com/w1280/ws.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "To Sua Ocean Trench",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:To_Sua_Ocean_Trench.jpg"
+        },
+        {
+          "title": "Lalomanu Beach",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lalomanu_Beach%2C_Samoa.jpg"
+        },
+        {
+          "title": "Flag of Samoa",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    },
+    {
+      "id": "country_vu",
+      "mode": "country",
+      "level": 60,
+      "correctAnswer": "Vanuatu",
+      "continent": "Oceania",
+      "description": "A South Pacific archipelago of active volcanoes and blue holes.",
+      "funfact": "Vanuatu's Mount Yasur is one of the world's most accessible active volcanoes.",
+      "options": [
+        "Vanuatu",
+        "Samoa",
+        "Fiji",
+        "Papua New Guinea"
+      ],
+      "imageUrls": [
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Mt_Yasur_Volcano.jpg?width=1000",
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Nanda_Blue_Hole%2C_Espiritu_Santo%2C_Vanuatu.jpg?width=1000",
+        "https://flagcdn.com/w1280/vu.png"
+      ],
+      "imageCredits": [
+        {
+          "title": "Mount Yasur volcano",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mt_Yasur_Volcano.jpg"
+        },
+        {
+          "title": "Vanuatu blue hole",
+          "source": "Wikimedia Commons",
+          "author": "See source page",
+          "license": "Free licence — see source page",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nanda_Blue_Hole%2C_Espiritu_Santo%2C_Vanuatu.jpg"
+        },
+        {
+          "title": "Flag of Vanuatu",
+          "source": "flagcdn.com",
+          "author": "flagcdn.com",
+          "license": "Public domain",
+          "sourceUrl": "https://flagcdn.com"
+        }
+      ]
+    }
+  ]
+}

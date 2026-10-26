@@ -37,6 +37,9 @@ dependencies:
     google_fonts: ^6.3.2
     confetti: ^0.8.0
     shared_preferences: ^2.5.3
+    # Networking + image caching for levels served by the backend API.
+    http: ^1.2.2
+    cached_network_image: ^3.4.1
 
 dev_dependencies:
     flutter_test:

@@ -1,19 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:ventur_2/widgets/smart_image.dart';
 
 /// Opens [imagePath] full screen with pinch-to-zoom, pan and double-tap zoom.
-Future<void> showFullscreenImage(BuildContext context, String imagePath) {
+Future<void> showFullscreenImage(
+  BuildContext context,
+  String imagePath, {
+  String? fallbackUrl,
+}) {
   return Navigator.of(context).push(
     MaterialPageRoute(
       fullscreenDialog: true,
-      builder: (_) => FullscreenImageViewer(imagePath: imagePath),
+      builder: (_) =>
+          FullscreenImageViewer(imagePath: imagePath, fallbackUrl: fallbackUrl),
     ),
   );
 }
 
 class FullscreenImageViewer extends StatefulWidget {
   final String imagePath;
+  final String? fallbackUrl;
 
-  const FullscreenImageViewer({super.key, required this.imagePath});
+  const FullscreenImageViewer({
+    super.key,
+    required this.imagePath,
+    this.fallbackUrl,
+  });
 
   @override
   State<FullscreenImageViewer> createState() => _FullscreenImageViewerState();
@@ -59,7 +70,11 @@ class _FullscreenImageViewerState extends State<FullscreenImageViewer> {
           minScale: 1,
           maxScale: 5,
           child: Center(
-            child: Image.asset(widget.imagePath, fit: BoxFit.contain),
+            child: SmartImage(
+              path: widget.imagePath,
+              fallbackUrl: widget.fallbackUrl,
+              fit: BoxFit.contain,
+            ),
           ),
         ),
       ),

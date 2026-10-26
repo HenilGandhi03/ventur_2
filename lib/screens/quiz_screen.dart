@@ -22,6 +22,9 @@ class _QuizScreenState extends State<QuizScreen> {
 
   final TextEditingController answerController = TextEditingController();
 
+  bool _loading = true;
+  String? _error;
+
   @override
   void initState() {
     super.initState();
@@ -37,10 +40,21 @@ class _QuizScreenState extends State<QuizScreen> {
   }
 
   Future<void> _startQuiz() async {
-    await controller.startQuiz();
-
-    if (mounted) {
-      setState(() {});
+    setState(() {
+      _loading = true;
+      _error = null;
+    });
+    try {
+      await controller.startQuiz();
+      if (mounted) setState(() => _loading = false);
+    } catch (e) {
+      if (mounted) {
+        setState(() {
+          _loading = false;
+          _error =
+              'Could not load levels.\nCheck that the server is running and reachable.';
+        });
+      }
     }
   }
 
@@ -78,8 +92,38 @@ class _QuizScreenState extends State<QuizScreen> {
     final quizState = controller.state;
 
     // Still loading questions
-    if (quizState == null) {
+    if (_loading) {
       return const Scaffold(body: Center(child: CircularProgressIndicator()));
+    }
+
+    // Failed to load from the API.
+    if (_error != null || quizState == null) {
+      return Scaffold(
+        appBar: AppBar(title: const Text('Classic'), leading: const BackButton()),
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(32),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Icon(Icons.cloud_off, size: 56, color: Colors.blueGrey),
+                const SizedBox(height: 16),
+                Text(
+                  _error ?? 'No levels available.',
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(fontSize: 16, color: Colors.blueGrey),
+                ),
+                const SizedBox(height: 20),
+                FilledButton.icon(
+                  onPressed: _startQuiz,
+                  icon: const Icon(Icons.refresh),
+                  label: const Text('Try again'),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
     }
 
     return Scaffold(
@@ -113,6 +157,7 @@ class _QuizScreenState extends State<QuizScreen> {
                 ZoomableImage(
                   imagePath:
                       quizState.question.imageUrls[quizState.currentImageIndex],
+                  fallbackUrl: quizState.question.fallbackImageUrl,
                   height: 300,
                   borderRadius: 16,
                 ),
@@ -241,6 +286,37 @@ class _QuizScreenState extends State<QuizScreen> {
                   ),
                 ),
               ],
+            ),
+
+            // Image attribution (free-to-use sources).
+            Builder(
+              builder: (context) {
+                final credit = quizState.question.creditAt(
+                  quizState.currentImageIndex,
+                );
+                if (credit == null) return const SizedBox(height: 8);
+                return Padding(
+                  padding: const EdgeInsets.only(top: 6, bottom: 2),
+                  child: Row(
+                    children: [
+                      const Icon(Icons.info_outline,
+                          size: 13, color: Colors.black38),
+                      const SizedBox(width: 4),
+                      Expanded(
+                        child: Text(
+                          '${credit.shortLabel} · ${credit.license}',
+                          style: const TextStyle(
+                            fontSize: 11,
+                            color: Colors.black45,
+                          ),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              },
             ),
 
             SizedBox(height: 16),

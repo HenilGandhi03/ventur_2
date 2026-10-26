@@ -2,6 +2,7 @@ import '../models/quiz_question.dart';
 
 const questions = [
   QuizQuestion(
+    id: 'country_italy',
     imageUrls: [
       'assets/images/italy.jpg',
       'assets/images/italy2.jpg',
@@ -17,6 +18,7 @@ const questions = [
   ),
 
   QuizQuestion(
+    id: 'country_france',
     imageUrls: [
       'assets/images/france.jpg',
       'assets/images/france2.jpg',
